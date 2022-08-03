@@ -2,19 +2,21 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-.wrapper {
-  height: 100vh;
+body {
+  height: 100%;
 }
 /* header */
 .main-container {
   border-bottom: 1px solid lightgray;
-  height: 10%;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .nav-wrapper {
   display: flex;
   justify-content: space-around;
@@ -62,15 +64,110 @@
   font-size: 25px;
 }
 /* main */
-main {
-  background-color: rgb(224, 222, 222);
+.main-wrapper {
   width: 100%;
-  height: 90%;
+}
+main {
+  width: 100%;
+  height: 80%;
   padding: 40px;
+  background-color: rgb(223, 215, 215);
 }
 main .main-feed {
-  width: 400px;
-  height: 500px;
-  border: 1px solid red;
+  width: 470px;
+  height: 100%;
   margin: 0 auto;
+  border: 1px solid gray;
+}
+main .main-feed .main-feed-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #fff;
+  height: 50px;
+}
+.main-feed-header i {
+  position: absolute;
+  right: 10px;
+}
+main .main-feed .main-feed-header img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 6px;
+}
+main .main-feed .main-picture {
+  width: 100%;
+  height: 500px;
+}
+main .main-feed .main-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .main-icon {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  background-color: #fff;
+}
+main .main-icon .icon-wrapper1 i {
+  padding-right: 4px;
+}
+main .main-icon .icon-wrapper1 .fa-heart {
+  color: red;
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  width: 100%;
+  background-color: #fff;
+}
+main .main-feed .main-counter {
+  display: flex;
+  margin-bottom: 7px;
+  font-size: 15px;
+  padding-left: 7px;
+}
+main .main-feed .main-counter img {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.main-title {
+  border-bottom: 1px solid lightgray;
+  padding-left: 7px;
+  height: 55px;
+}
+.main-title span,
+.main-title .time {
+  color: gray;
+}
+
+.main-comment {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  height: 40px;
+  align-items: center;
+  font-size: 13px;
+  padding-right: 7px;
+}
+.main-comment input {
+  height: 100%;
+  width: 90%;
+  outline: none;
+  border: none;
+  padding: 7px;
+}
+.main-comment button {
+  border: 0;
+  outline: 0;
+  background-color: #fff;
+  color: lightblue;
+  cursor: pointer;
 }
