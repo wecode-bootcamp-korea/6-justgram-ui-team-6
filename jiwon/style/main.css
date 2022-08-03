@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  height: 100vh;
+}
+/* header */
+.main-container {
+  border-bottom: 1px solid lightgray;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.nav-wrapper .nav-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-wrapper .nav-left .fa-instagram {
+  position: relative;
+  font-size: 30px;
+  margin-right: 40px;
+}
+
+.nav-wrapper .nav-left .fa-instagram::after {
+  content: "";
+  width: 2px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  margin-left: 20px;
+}
+.nav-wrapper .nav-left p {
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+}
+.nav-wrapper .nav-center input {
+  width: 200px;
+  height: 30px;
+  border: none;
+  background-color: rgb(245, 241, 241);
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  padding-left: 45%;
+}
+.nav-wrapper .nav-right {
+  display: flex;
+  width: 150px;
+  justify-content: space-around;
+}
+.nav-wrapper .nav-right i {
+  font-size: 25px;
+}
+/* main */
+main {
+  background-color: rgb(224, 222, 222);
+  width: 100%;
+  height: 90%;
+  padding: 40px;
+}
+main .main-feed {
+  width: 400px;
+  height: 500px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
