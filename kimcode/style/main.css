@@ -50,3 +50,99 @@ header {
   max-height: 50px;
   padding-left: 24px;
 }
+
+.feed-container {
+  position: fixed;
+  border: 1px solid black;
+  width: 60vh;
+  height: 80vh;
+  left: 20%;
+  top: 15%;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.feed-header-wrapper {
+  justify-content: space-between;
+  border: 1px solid black;
+  height: 6vh;
+}
+
+.feed-header-left {
+  padding-left: 10px;
+}
+
+.feed-profile-image {
+  height: 4vh;
+  margin-right: 10px;
+}
+
+.feed-header-right {
+  padding-right: 10px;
+}
+
+.feed-photo {
+  border: 1px solid black;
+  height: 55vh;
+}
+
+.feed-photo-image {
+  width: 100%;
+  height: 100%;
+}
+
+.feed-menubar-wrapper {
+  justify-content: space-between;
+  width: 100%;
+  height: 6vh;
+  border: 1px solid black;
+}
+
+.feed-menubar-right {
+  margin-right: 10px;
+}
+
+.menubar-icon {
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.feed-favor {
+  justify-content: left;
+  border: 1px solid black;
+  width: 100%;
+  height: 4vh;
+}
+
+.feed-favor-image {
+  height: 2vh;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.feed-favor-name {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.feed-comments {
+  height: 7vh;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+.feed-comments-left {
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.feed-comments-right {
+  padding-right: 10px;
+}
