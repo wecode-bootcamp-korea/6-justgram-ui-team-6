@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="./style/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Mouse+Memoirs&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Login page</title>
+  </head>
+
+  <body>
+    <!-- 전체 container -->
+    <div id="flex-container">
+      <!-- 좌측 이미지 -->
+      <div id="leftImg"></div>
+
+      <!-- 우측 컨텐츠 -->
+      <div id="contents">
+        <!-- Justgram 로고 -->
+        <div class="logo">
+          Justgram<img src="images/instagram.png" width="20px" height="20px" />
+        </div>
+
+        <!-- 로그인 박스 및 버튼 -->
+        <div class="loginBoxs">
+          <div class="loginId">
+            <input
+              class="inputBoxs"
+              type="text"
+              placeholder="전화번호, 사용자 이름 또는 이메일"
+            />
+          </div>
+
+          <div class="loginPw">
+            <input class="inputBoxs" type="password" placeholder="비밀번호" />
+          </div>
+
+          <div>
+            <button class="loginBtn" disabled>로그인</button>
+          </div>
+        </div>
+
+        <!-- 가입하기(미완성) -->
+        <div class="join">
+          <span>계정이 없으신가요?</span>
+          <a>가입하기</a>
+        </div>
+      </div>
+    </div>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
