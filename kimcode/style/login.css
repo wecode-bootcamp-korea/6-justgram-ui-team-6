@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+#out_div{
+    border: 1px solid #D8D8D8;
+    width: 350; 
+    height: 396;
+}
+
+#logo_div{
+    position: relative;
+    left: 25%;
+    width: 175; 
+    height: 51;
+}
+
+#logo_text{
+    font-family: 'Lobster';
+    font-size: 40px;
+    text-align: center;
+}
+
+#login_div{
+    position: relative;
+    top: 20;
+    width: 348; 
+    height: 265;
+}
+
+#id_div{
+    position: relative;
+    left: 12%;
+    width: 268; 
+    height: 38;
+}
+
+#id_input{
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    width: 100%; 
+    height: 100%;
+}
+
+#pwd_div{
+    position: relative;
+    top: 8;
+    left: 12%;
+    width: 268; 
+    height: 38;
+}
+
+#pwd_input{
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    width: 100%; 
+    height: 100%;
+}
+
+#btn_div{
+    position: relative;
+    top: 25;
+    left: 12%;
+    width: 268; 
+    height: 30;
+}
+
+#login_btn{
+    background-color: #AFE1FF;
+    border-radius: 5px;
+    width: 100%; 
+    height: 100%;
+    border: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+#h_div{
+    position: relative;
+    top: 47;
+    left: 12%;
+    width: 268; 
+    height: 20;
+}
+
+.h_div_sub{
+    width: 43%; 
+    height: 20;
+    float: left;
+}
+
+#h_sub_text{
+    width: 35; 
+    font-size: 12px;
+    text-align: center;
+    color: gray;
+}
+
+#sublogin_div{
+    position: relative;
+    top: 65;
+    left: 12%;
+    width: 268; 
+    height: 20;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2457BD;
+    text-align: center;
+}
+
+#pwd_search_div{
+    position: relative;
+    top: 85;
+    left: 12%;
+    width: 268; 
+    height: 20;
+    font-size: 12px;
+    text-align: center;
+}
+
