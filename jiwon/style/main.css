@@ -9,7 +9,7 @@ body {
   height: 100%;
 }
 /* header */
-.main-container {
+.nav-container {
   border-bottom: 1px solid lightgray;
   height: 60px;
   display: flex;
@@ -122,7 +122,6 @@ main .main-icon .icon-wrapper1 .fa-heart {
   display: flex;
   flex-direction: column;
   font-size: 15px;
-  width: 100%;
   background-color: #fff;
 }
 main .main-feed .main-counter {
@@ -140,14 +139,28 @@ main .main-feed .main-counter img {
 .main-title {
   border-bottom: 1px solid lightgray;
   padding-left: 7px;
-  height: 55px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
 }
-.main-title span,
+.main-title .title-id {
+  display: flex;
+}
+
+.main-title .title-id p {
+  padding-right: 3px;
+}
 .main-title .time {
   color: gray;
 }
-
-.main-comment {
+.main-title .comment-id {
+  display: flex;
+  justify-content: space-between;
+}
+.main-title .comment-id .fa-heart {
+  padding-right: 10px;
+}
+.add-comment {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -157,17 +170,38 @@ main .main-feed .main-counter img {
   font-size: 13px;
   padding-right: 7px;
 }
-.main-comment input {
+.add-comment input {
   height: 100%;
   width: 90%;
   outline: none;
   border: none;
   padding: 7px;
 }
-.main-comment button {
+.add-comment button {
   border: 0;
   outline: 0;
   background-color: #fff;
   color: lightblue;
   cursor: pointer;
+}
+
+/* 자바스크립트 클래스생성 */
+#comments {
+  display: flex;
+  flex-direction: column;
+}
+.wrapperComments {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapperComments span {
+  margin-right: 5px;
+}
+.comments-list {
+  display: flex;
+}
+.heart {
+  border: none;
+  color: red;
+  background-color: white;
 }

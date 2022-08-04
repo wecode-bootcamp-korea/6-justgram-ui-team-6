@@ -1,6 +1,7 @@
 const email = document.getElementById("emailInput");
 const pw = document.getElementById("pwInput");
 const loginBtn = document.getElementById("login");
+const loginFomr = document.querySelector(".loginForm");
 
 const isActiveLogin = () => {
   const emailValue = email.value;
