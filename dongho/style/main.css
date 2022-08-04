@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-color: #9e9e9e12;
+}
+
+header {
+  border-bottom: 1px solid #dbdbdb;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  width: 935px;
+  height: 60px;
+  padding: 0px 20px;
+}
+
+.title {
+  width: 300px;
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+  align-items: flex-start;
+  margin: 0px 0px 5px 5px;
+}
+
+.search {
+  width: 258px;
+  height: 36px;
+  margin: 5px 40px 6px;
+  padding: 9px 0px 7px 8px;
+  border: 0px solid rgba(var(--ca6, 219, 219, 219), 1);
+  border-radius: 10px;
+  background-color: #9e9e9e2e;
+}
+
+.icon {
+  width: auto;
+  height: auto;
+  max-width: 50px;
+  max-height: 50px;
+  padding-left: 24px;
+}
+
+.feed-container {
+  position: fixed;
+  border: 1px solid black;
+  width: 60vh;
+  height: 80vh;
+  left: 20%;
+  top: 15%;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.feed-header-wrapper {
+  justify-content: space-between;
+  border: 1px solid black;
+  height: 6vh;
+}
+
+.feed-header-left {
+  padding-left: 10px;
+}
+
+.feed-profile-image {
+  height: 4vh;
+  margin-right: 10px;
+}
+
+.feed-header-right {
+  padding-right: 10px;
+}
+
+.feed-photo {
+  border: 1px solid black;
+  height: 55vh;
+}
+
+.feed-photo-image {
+  width: 100%;
+  height: 100%;
+}
+
+.feed-menubar-wrapper {
+  justify-content: space-between;
+  width: 100%;
+  height: 6vh;
+  border: 1px solid black;
+}
+
+.feed-menubar-right {
+  margin-right: 10px;
+}
+
+.menubar-icon {
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.feed-favor {
+  justify-content: left;
+  border: 1px solid black;
+  width: 100%;
+  height: 4vh;
+}
+
+.feed-favor-image {
+  height: 2vh;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.feed-favor-name {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.feed-comments {
+  height: 7vh;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+.feed-comments-left {
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.feed-comments-right {
+  padding-right: 10px;
+}
