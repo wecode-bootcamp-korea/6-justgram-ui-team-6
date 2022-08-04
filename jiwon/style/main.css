@@ -186,7 +186,7 @@ main .main-feed .main-counter img {
 }
 
 /* 자바스크립트 클래스생성 */
-#comments {
+.comment-idd {
   display: flex;
   flex-direction: column;
 }
