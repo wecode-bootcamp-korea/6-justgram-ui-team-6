@@ -1,0 +1,68 @@
+.to-do {
+  border: 1px solid lightgray;
+}
+
+.hearder-all {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-img {
+  height: 30px;
+}
+.logo-text {
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+}
+.header-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.menu-img {
+  padding-left: 10px;
+  height: 30px;
+}
+.contents-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.marginTop {
+  margin-top: 70px;
+  width: 500px;
+}
+.profile {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.profile-img {
+  height: 30px;
+  border-radius: 100%;
+  margin: 0 10px 0 20px;
+}
+
+.feed-img {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+}
+.feed-menu {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.feed-menu-img {
+  height: 20px;
+  margin: 5px;
+}
