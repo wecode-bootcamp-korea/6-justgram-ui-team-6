@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style/login.css"> <!-- css 외부 링크 -->
+        
+    </head>
+    <body>
+        <script  type="text/javascript" src="js/login.js"> </script> <!-- js 외부 링크-->
+        <div id="out_div">
+            <div id="logo_div"> <!-- 로고 div--> 
+                <p id="logo_text">justgram</p>
+            </div>
+            <div id="login_div"> <!-- 로그인 폼 div-->
+                <form>
+                    <div>
+                        <div id="id_div"> 
+                            <input id="id_input" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" onkeyup='checkInputId()'>
+                        </div> <!-- 아이디-->
+                        <div id="pwd_div"> 
+                            <input id="pwd_input" type="password" placeholder="비밀번호">
+                        </div> <!-- 비밀번호-->
+                        <div id="btn_div"> 
+                            <button id="login_btn" type="button" disabled> 로그인 </button>
+                        </div> <!-- 버튼-->
+                        <!-- 아래 부가적인 요소 -->
+                        <div id="h_div">   
+                            <div class="h_div_sub"><hr></div>
+                            <div class="h_div_sub" id="h_sub_text"> 또는</div>
+                            <div class="h_div_sub"><hr></div>
+                        </div> 
+                        <div id="sublogin_div">
+                            Facebook으로 로그인
+                        </div>
+                        <div id="pwd_search_div">
+                            <a>비밀번호를 잊으셨나요?</a>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style/main.css"> <!-- css 외부 링크 -->
+    </head>
+    <body>
+        <script  type="text/javascript" src="js/main.js"> </script> <!-- js 외부 링크-->
+        <div id="menu_div"> <!-- 메뉴 div -->
+            <div class="sub_menu empty_div_w">
+            </div>
+            <div class="sub_menu">
+                <img class="menu_img" src="file/profile.png"> 
+            </div>
+            <div class="sub_menu">
+                <img class="menu_img" src="file/heart.png"> 
+            </div>
+            <div class="sub_menu">
+                <img class="menu_img" src="file/explore.png"> 
+            </div>
+            <div class="sub_menu logo_div">
+                <div class="logo_div_sub logo_img">
+                    <img class="menu_img" src="file/instagram.png"> 
+                </div>
+                <div class="logo_div_sub logo_text">
+                    <p>|</p>
+                </div>
+                <div class="logo_div_sub logo_text" id="logo_text">
+                    <p>justgram</p>
+                </div>
+            </div>
+            <div class="sub_menu search_div">
+                <input id="search_input" type="text" placeholder="검색">
+            </div>
+        </div> 
+
+        <div class="main_feed"> <!-- 피드 div -->
+            <div class="feed_header"> <!-- 피드 헤더 div -->
+                <div class="header_sub">
+                    <div class="header_profile profile_img">
+                        <img src="">
+                    </div>
+                    <div class="header_profile profile_id">hhhj1008</div>
+                </div>
+                <div class="header_sub profile_ect">
+                    <div> ... </div>
+                </div>            
+            </div>
+            <div class="feed_img"> <!-- 피드 사진 div    -->
+                <img class="feed_img" src="file/img1.jpg"> 
+            </div>
+            <div class="feed_cmt"> <!-- 댓글창 div -->
+                <div class="cmt_list" id="cmt_list1"></div>
+                <div class="cmt_insert">
+                    <input class="cmt_input" id="cmt_input1" type="text" placeholder="댓글 달기..." onkeypress="addCommentKey(event, '1')">
+                    <button class="cmt_btn" onclick="addCommentBtn('1')"> 게시 </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="empty_div_h"></div>
+
+        <div class="main_feed"> <!-- 피드 div -->
+            <div class="feed_header"> <!-- 피드 헤더 div -->
+                <div class="header_sub">
+                    <div class="header_profile profile_img">
+                        <img src="">
+                    </div>
+                    <div class="header_profile profile_id">hhhj1008</div>
+                </div>
+                <div class="header_sub profile_ect">
+                    <div> ... </div>
+                </div>            
+            </div>
+            <div class="feed_img"> <!-- 피드 사진 div    -->
+                <img class="feed_img" src="file/img2.jpg"> 
+            </div>
+            <div class="feed_cmt"> <!-- 댓글창 div -->
+                <div class="cmt_list" id="cmt_list2"></div>
+                <div class="cmt_insert">
+                    <input class="cmt_input" id="cmt_input2" type="text" placeholder="댓글 달기..." onkeypress="addCommentKey(event, '2')">
+                    <button class="cmt_btn" onclick="addCommentBtn('2')"> 게시 </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="empty_div_h"></div>
+
+        <div class="main_feed"> <!-- 피드 div -->
+            <div class="feed_header"> <!-- 피드 헤더 div -->
+                <div class="header_sub">
+                    <div class="header_profile profile_img">
+                        <img src="">
+                    </div>
+                    <div class="header_profile profile_id">hhhj1008</div>
+                </div>
+                <div class="header_sub profile_ect">
+                    <div> ... </div>
+                </div>            
+            </div>
+            <div class="feed_img"> <!-- 피드 사진 div    -->
+                <img class="feed_img" src="file/img3.jpg"> 
+            </div>
+            <div class="feed_cmt"> <!-- 댓글창 div -->
+                <div class="cmt_list" id="cmt_list3"></div>
+                <div class="cmt_insert">
+                    <input class="cmt_input" id="cmt_input3" type="text" placeholder="댓글 달기..." onkeypress="addCommentKey(event, '3')">
+                    <button class="cmt_btn" onclick="addCommentBtn('3')"> 게시 </button>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
