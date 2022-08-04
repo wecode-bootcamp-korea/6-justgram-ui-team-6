@@ -1,7 +1,7 @@
 // 댓글 달면 추가 되는 로직
 const commentInput = document.querySelectorAll(".comment-write-input"); // 댓글 input
 const commentBtn = document.querySelectorAll(".comment-write-button"); // 게시 등록 버튼
-const commentList = document.querySelectorAll(".comment-idd"); //댓글 추가 공간
+const commentList = document.querySelectorAll(".comment-box"); //댓글 추가 공간
 
 //댓글생성 구현
 const onSubmit = (add, i) => {
@@ -30,7 +30,7 @@ const onSubmit = (add, i) => {
 commentBtn.forEach((ei, i) => {
   ei.addEventListener("click", () => {
     let comment = commentInput[i].value;
-    if (comment.length > 2) {
+    if (comment.length > 0) {
       onSubmit(comment, i);
     }
   });
@@ -39,9 +39,8 @@ commentBtn.forEach((ei, i) => {
 // Enter키로 댓글 추가 이벤트 구현
 commentInput.forEach((ei, i) => {
   ei.addEventListener("keydown", (e) => {
-    if (e.keyCode === 13 && commentInput[i].value.length > 2) {
+    if (e.keyCode === 13 && commentInput[i].value.length > 0) {
       onSubmit(commentInput[i].value, i);
-      console.log(i);
     }
   });
 });

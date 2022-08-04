@@ -186,7 +186,7 @@ main .main-feed .main-counter img {
 }
 
 /* 자바스크립트 클래스생성 */
-.comment-idd {
+.comment-box {
   display: flex;
   flex-direction: column;
 }
@@ -204,4 +204,7 @@ main .main-feed .main-counter img {
   border: none;
   color: red;
   background-color: white;
+}
+.heart i {
+  margin-right: 10px;
 }
