@@ -8,10 +8,10 @@ input {
 }
 
 .window {
+  position: fixed;
   background-color: rgba(var(--d87, 255, 255, 255), 1);
   border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   border-radius: 1px;
-  position: fixed;
   width: 350px;
   height: 396px;
   left: 40%;

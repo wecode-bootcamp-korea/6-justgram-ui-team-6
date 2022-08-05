@@ -1,0 +1,58 @@
+{
+  "feeds": [
+    {
+      "id": 1,
+      "userName": "canon_mj",
+      "userImage": "./images/userImage1.jpg",
+      "feedImage": "./images/feedImage1.jpg",
+      "countLiked": 40,
+      "feedTime": 42,
+      "comments": [
+        {
+          "user": "cratuss",
+          "content": "위워크에서 자전거."
+        },
+        {
+          "user": "secius",
+          "content": "거봐 좋았잖아~"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "userName": "cratuss",
+      "userImage": "./images/userImage2.jpg",
+      "feedImage": "./images/feedImage2.jpg",
+      "countLiked": 20,
+      "feedTime": 54,
+      "comments": [
+        {
+          "user": "warrently",
+          "content": "위워크에서 진행한 베이킹 클래스.."
+        },
+        {
+          "user": "neceosecius",
+          "content": "거봐봐 좋았잖아~~"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "userName": "warrently",
+      "userImage": "./images/userImage3.jpg",
+      "feedImage": "./images/feedImage3.jpg",
+      "countLiked": 70,
+      "feedTime": 11,
+      "comments": [
+        {
+          "user": "canon_mj",
+          "content": "위워크에서 코딩."
+        },
+        {
+          "user": "neceo",
+          "content": "좋았잖아~~~"
+        }
+      ]
+    }
+  ]
+}
