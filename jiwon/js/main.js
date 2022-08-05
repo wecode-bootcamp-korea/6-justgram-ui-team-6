@@ -3,6 +3,45 @@ const commentInput = document.querySelectorAll(".comment-write-input"); // 댓�
 const commentBtn = document.querySelectorAll(".comment-write-button"); // 게시 등록 버튼
 const commentList = document.querySelectorAll(".comment-box"); //댓글 추가 공간
 
+const image = document.querySelectorAll(".imgs"); // 데이터 이미지 가져오기
+
+const arrNickName = document.querySelectorAll(".nickName"); // 데이터 닉네임 가져오기
+const arrContent = document.querySelectorAll(".main-content"); //데이터 내용 가져오기
+
+// 닉네임 데이터
+arrNickName.forEach((name, i) => {
+  fetch("../data/comments.json", {
+    method: "GET",
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      name.innerText = data[i].userName;
+    });
+});
+
+// 내용 데이터
+arrContent.forEach((content, i) => {
+  fetch("../data/comments.json", {
+    method: "GET",
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      content.innerText = data[i].content;
+    });
+});
+
+// 이미지 데이터
+image.forEach((img, i) => {
+  fetch("../data/comments.json", {
+    method: "GET",
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      const images = data[i].images;
+      img.src = images;
+    });
+});
+
 //댓글생성 구현
 const onSubmit = (add, i) => {
   const addComment_list = document.createElement("div");
@@ -11,7 +50,6 @@ const onSubmit = (add, i) => {
   const wrapperComment = document.createElement("div");
 
   userId.innerText = "zioni_o";
-
   likesBtn.innerHTML = '<i class="fa-solid fa-heart"></i>'; // 하트아이콘
   likesBtn.classList.add("heart");
   wrapperComment.classList.add("comments-list");
@@ -44,3 +82,5 @@ commentInput.forEach((ei, i) => {
     }
   });
 });
+
+//
