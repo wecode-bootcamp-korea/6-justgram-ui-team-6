@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Mouse+Memoirs&display=swap"
+      rel="stylesheet"
+    />
+    <title>Main page</title>
+  </head>
+
+  <body>
+    <!-- 메인 페이지 헤더(로고, 검색, 아이콘) -->
+    <div id="header-wrapper">
+      <!-- 로고 -->
+      <div class="header-logo vertical-center">
+        <img class="img-size" src="./images/instagram-black.png" />
+        <span class="header-icon-margin">Justgram</span>
+      </div>
+      <!-- 사이트 내 검색 -->
+      <div class="header-search vertical-center">
+        <input class="search-input" type="text" placeholder="검색" />
+      </div>
+  
+      <!-- 탐색, 하트, 마이페이지 icons -->
+      <div class="header-icons vertical-center">
+        <img
+            class="img-size"
+            src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+        />
+        <img
+            class="img-size header-icon-margin"
+            src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+        />
+        <img
+            class="img-size header-icon-margin"
+            src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+        />
+      </div>
+    </div>
+
+
+    <!-- 메인 페이지 내용(피드) -->
+    <div id="contents-wrapper">
+      <!-- 피드 1 -->
+      <div class="feed-wrapper">
+        
+        <!-- 피드 헤더 -->
+        <div class="feed-icon-align">
+          <!-- 프로필 사진과 아이디 -->
+          <div class="profile vertical-center">
+            <img class="image" src="./images/feed-profile.jpg" />
+            <span class="name">Parks</span>
+          </div>
+          <!-- 프로필 더보기 아이콘-->
+          <div class="more vertical-center">
+            <img class="img-size" src="./images/option.png" />
+          </div>
+        </div>
+
+        <!-- 피드 사진 -->
+        <div class="feed-img vertical-center">
+          <img class="image" src="./images/feed-img.jpg" />
+        </div>
+
+        <!-- 피드 메뉴바  -->
+        <div class="feed-menu feed-icon-align">
+          <div class="feed-menu-left vertical-center">
+            <!-- 피드 메뉴 하트 등 -->
+            <img class="img-size" src="./images/heart.png" />
+            <img class="img-size left-margin" src="./images/comment.png" />
+            <img class="img-size left-margin" src="./images/upload.png" />
+          </div>
+          <div class="feed-menu-right vertical-center">
+            <!-- 피드 메뉴 북마크 -->
+            <img class="img-size" src="./images/bookmark.png" />
+          </div>
+        </div>
+
+        <!-- 피드 내용 -->
+        <div class="feed-contents feed-margin-top feed-font-size">
+          <!-- 피드 좋아요 -->
+          <div class="feed-like vertical-center">
+            <img class="comment-profile" src="./images/feed-profile2.jpg" />
+            <span class="feed-font-bold">hello</span>
+            <span class="feed-font-margin">님 외</span>
+            <span class="feed-font-bold">5명</span>
+            <span class="feed-font-margin">이 좋아합니다</span>
+          </div>
+          <div class="feed-owner feed-margin-top">
+            <span class="feed-font-bold"> weyy</span> 친해진 동기들이랑
+            선릉에..
+            <span class="more"></span>
+              더 보기</span
+            >
+          </div>
+
+          <!-- 피드 댓글 -->
+          <div class="comment-list">
+            <div class="feed-comment feed-margin-top">
+              <span class="feed-font-bold"> happyDay</span> 또 놀자!
+              <img
+                  class="comment-miniHeart"
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+              />
+            </div>
+          </div>  
+
+          <!-- 피드 업로드 시간 -->
+          <div
+            class="feed-time feed-margin-top"
+            style="margin-left: 5px; font-size: 10px"
+          >35분 전
+          </div>
+
+          <!-- 댓글 추가 -->
+          <div class="add-comment feed-margin-top vertical-center">
+            <input class="new-content" type="text" placeholder="댓글 달기...">
+            <button class="btn">게시</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 피드 2 -->
+      <div class="feed-wrapper">
+        <!-- 피드 헤더 -->
+        <div class="feed-icon-align">
+          <!-- 프로필 사진과 아이디 -->
+          <div class="profile vertical-center">
+            <img class="image" src="./images/feed-profile.jpg" />
+            <span class="name">Parks</span>
+          </div>
+          <!-- 프로필 더보기 아이콘-->
+          <div class="more vertical-center">
+            <img class="img-size" src="./images/option.png" />
+          </div>
+        </div>
+
+        <!-- 피드 사진 -->
+        <div class="feed-img vertical-center">
+          <img class="image" src="./images/feed-img.jpg" />
+        </div>
+
+        <!-- 피드 메뉴바  -->
+        <div class="feed-menu feed-icon-align">
+          <div class="feed-menu-left vertical-center">
+            <!-- 피드 메뉴 하트 등 -->
+            <img class="img-size" src="./images/heart.png" />
+            <img class="img-size left-margin" src="./images/comment.png" />
+            <img class="img-size left-margin" src="./images/upload.png" />
+          </div>
+          <div class="feed-menu-right vertical-center">
+            <!-- 피드 메뉴 북마크 -->
+            <img class="img-size" src="./images/bookmark.png" />
+          </div>
+        </div>
+
+        <!-- 피드 내용 -->
+        <div class="feed-contents feed-margin-top feed-font-size">
+          <!-- 피드 좋아요 -->
+          <div class="feed-like vertical-center">
+            <img class="comment-profile" src="./images/feed-profile2.jpg" />
+            <span class="feed-font-bold">hello</span>
+            <span class="feed-font-margin">님 외</span>
+            <span class="feed-font-bold">5명</span>
+            <span class="feed-font-margin">이 좋아합니다</span>
+          </div>
+          <div class="feed-owner feed-margin-top">
+            <span class="feed-font-bold"> weyy</span> 친해진 동기들이랑
+            선릉에..
+            <span class="more"></span>
+              더 보기</span
+            >
+          </div>
+
+          <!-- 피드 댓글 -->
+          <div class="comment-list">
+            <div class="feed-comment feed-margin-top">
+              <span class="feed-font-bold"> happyDay</span> 또 놀자!
+              <img
+                  class="comment-miniHeart"
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+              />
+            </div>
+          </div>  
+
+          <!-- 피드 업로드 시간 -->
+          <div
+            class="feed-time feed-margin-top"
+            style="margin-left: 5px; font-size: 10px"
+          >35분 전
+          </div>
+
+          <!-- 댓글 추가 -->
+          <div class="add-comment feed-margin-top vertical-center">
+            <input class="new-content" type="text" placeholder="댓글 달기...">
+            <button class="btn">게시</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 피드 3 -->
+      <div class="feed-wrapper">
+        <!-- 피드 헤더 -->
+        <div class="feed-icon-align">
+          <!-- 프로필 사진과 아이디 -->
+          <div class="profile vertical-center">
+            <img class="image" src="./images/feed-profile.jpg" />
+            <span class="name">Parks</span>
+          </div>
+          <!-- 프로필 더보기 아이콘-->
+          <div class="more vertical-center">
+            <img class="img-size" src="./images/option.png" />
+          </div>
+        </div>
+
+        <!-- 피드 사진 -->
+        <div class="feed-img vertical-center">
+          <img class="image" src="./images/feed-img.jpg" />
+        </div>
+
+        <!-- 피드 메뉴바  -->
+        <div class="feed-menu feed-icon-align">
+          <div class="feed-menu-left vertical-center">
+            <!-- 피드 메뉴 하트 등 -->
+            <img class="img-size" src="./images/heart.png" />
+            <img class="img-size left-margin" src="./images/comment.png" />
+            <img class="img-size left-margin" src="./images/upload.png" />
+          </div>
+          <div class="feed-menu-right vertical-center">
+            <!-- 피드 메뉴 북마크 -->
+            <img class="img-size" src="./images/bookmark.png" />
+          </div>
+        </div>
+
+        <!-- 피드 내용 -->
+        <div class="feed-contents feed-margin-top feed-font-size">
+          <!-- 피드 좋아요 -->
+          <div class="feed-like vertical-center">
+            <img class="comment-profile" src="./images/feed-profile2.jpg" />
+            <span class="feed-font-bold">hello</span>
+            <span class="feed-font-margin">님 외</span>
+            <span class="feed-font-bold">5명</span>
+            <span class="feed-font-margin">이 좋아합니다</span>
+          </div>
+          <div class="feed-owner feed-margin-top">
+            <span class="feed-font-bold"> weyy</span> 친해진 동기들이랑
+            선릉에..
+            <span class="more"></span>
+              더 보기</span
+            >
+          </div>
+
+          <!-- 피드 댓글 -->
+          <div class="comment-list">
+            <div class="feed-comment feed-margin-top">
+              <span class="feed-font-bold"> happyDay</span> 또 놀자!
+              <img
+                  class="comment-miniHeart"
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+              />
+            </div>
+          </div>  
+
+          <!-- 피드 업로드 시간 -->
+          <div
+            class="feed-time feed-margin-top"
+            style="margin-left: 5px; font-size: 10px"
+          >35분 전
+          </div>
+
+          <!-- 댓글 추가 -->
+          <div class="add-comment feed-margin-top vertical-center">
+            <input class="new-content" type="text" placeholder="댓글 달기...">
+            <button class="btn">게시</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
