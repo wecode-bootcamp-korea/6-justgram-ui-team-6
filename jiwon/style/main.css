@@ -202,9 +202,10 @@ main .main-feed .main-counter img {
 }
 .heart {
   border: none;
-  color: red;
+
   background-color: white;
 }
 .heart i {
   margin-right: 10px;
+  color: red;
 }

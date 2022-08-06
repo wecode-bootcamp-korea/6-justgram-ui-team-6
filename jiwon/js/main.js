@@ -8,39 +8,53 @@ const image = document.querySelectorAll(".imgs"); // 데이터 이미지 가져�
 const arrNickName = document.querySelectorAll(".nickName"); // 데이터 닉네임 가져오기
 const arrContent = document.querySelectorAll(".main-content"); //데이터 내용 가져오기
 
-// 닉네임 데이터
-arrNickName.forEach((name, i) => {
-  fetch("../data/comments.json", {
-    method: "GET",
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      name.innerText = data[i].userName;
+// json데이터 가져오기(닉네임,내용,이미지)
+fetch("../data/comments.json", {
+  method: "GET",
+})
+  .then((res) => res.json())
+  .then((data) => {
+    let commentArr = data.comments;
+    commentArr.forEach((el, i) => {
+      arrContent[i].append(el.content);
+      arrNickName[i].append(el.userName);
+      image[i].src = el.images;
     });
-});
+  });
+
+// 닉네임 데이터
+// arrNickName.forEach((name, i) => {
+//   fetch("../data/comments.json", {
+//     method: "GET",
+//   })
+//     .then((res) => res.json())
+//     .then((data) => {
+//       name.innerText = data.comments[i].userName;
+//     });
+// });
 
 // 내용 데이터
-arrContent.forEach((content, i) => {
-  fetch("../data/comments.json", {
-    method: "GET",
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      content.innerText = data[i].content;
-    });
-});
+// arrContent.forEach((content, i) => {
+//   fetch("../data/comments.json", {
+//     method: "GET",
+//   })
+//     .then((res) => res.json())
+//     .then((data) => {
+//       content.innerText = data.comments[i].content;
+//     });
+// });
 
 // 이미지 데이터
-image.forEach((img, i) => {
-  fetch("../data/comments.json", {
-    method: "GET",
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      const images = data[i].images;
-      img.src = images;
-    });
-});
+// image.forEach((img, i) => {
+//   fetch("../data/comments.json", {
+//     method: "GET",
+//   })
+//     .then((res) => res.json())
+//     .then((data) => {
+//       const images = data["comments"][i].images;
+//       img.src = images;
+//     });
+// });
 
 //댓글생성 구현
 const onSubmit = (add, i) => {
@@ -50,7 +64,7 @@ const onSubmit = (add, i) => {
   const wrapperComment = document.createElement("div");
 
   userId.innerText = "zioni_o";
-  likesBtn.innerHTML = '<i class="fa-solid fa-heart"></i>'; // 하트아이콘
+  likesBtn.innerHTML = '<i class="fa-regular fa-heart"></i>'; // 하트아이콘
   likesBtn.classList.add("heart");
   wrapperComment.classList.add("comments-list");
   addComment_list.classList.add("wrapperComments");
