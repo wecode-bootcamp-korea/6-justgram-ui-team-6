@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="images/instagram.png" rel="shortcut icon" type="image/x-icon" />
+    <title>justagram</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="window">
+        <div class="logo-wrapper"><span class="logo-text">justgram</span></div>
+        <div class="form-wrapper">
+          <form name="login" action="/dongho/main.html" id="loginform" onsubmit="return valid(email, password);">
+            <input type="text" id="email" class="inputStyle" placeholder="전화번호, 사용자 이름 또는 이메일" />
+            <input type="password" id="password" class="inputStyle" placeholder="비밀번호" />
+            <button type="submit" id="login" class="buttonStyle" value="aa" disabled>로그인</button>
+          </form>
+        </div>
+        <div class="extra-wrapper">
+          <a class="link" href="https://www.instagram.com/accounts/password/reset/">비밀번호를 잊으셨나요?</a>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>
