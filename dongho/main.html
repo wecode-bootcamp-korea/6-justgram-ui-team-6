@@ -17,12 +17,25 @@
           <span class="title">| justgram</span>
         </div>
         <div class="search-wrapper">
-          <input type="text" placeholder="검색" class="search" id="search" />
+          <div><input type="text" placeholder="검색" class="search" id="search" autocomplete="off" /></div>
+          <div class="add"></div>
+          <div class="add-wrapper">
+            <!-- <div class="user"></div>
+            <div class="user"></div>
+            <div class="user"></div> -->
+          </div>
         </div>
         <div class="icon--wrapper">
           <img class="icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" />
           <img class="icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" />
-          <img class="icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" />
+          <img class="icon drop" id="drop" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" onclick="dropDown()" />
+          <div class="user-interface-wrapper"></div>
+          <div class="user-interface">
+            <div class="interface"><img class="icon-down" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" />프로필</div>
+            <div class="interface"><i class="fa-regular fa-bookmark" style="margin-right: 13px; margin-left: 4px"></i>저장됨</div>
+            <div class="interface"><img class="icon-down2" src="./images/settings.png" />설정</div>
+            <div class="interface down" id="logout" onclick="location.href='http://127.0.0.1:5500/dongho/login.html';">로그아웃</div>
+          </div>
         </div>
       </header>
 
@@ -71,9 +84,9 @@
                 <span class="feed-favor-name" style="color: gray"><span class="feedTime"></span>분전</span>
               </div>
             </div>
-            <div class="feed-comments-right-wrapper flex-center">
+            <!-- <div class="feed-comments-right-wrapper flex-center">
               <i class="fa-regular fa-heart"></i>
-            </div>
+            </div> -->
           </div>
           <div class="feed-plus-wrapper flex-center">
             <input type="text" placeholder="댓글 달기..." class="input-comments" />
@@ -127,9 +140,9 @@
                 <span class="feed-favor-name" style="color: gray"><span class="feedTime"></span>분전</span>
               </div>
             </div>
-            <div class="feed-comments-right-wrapper flex-center">
+            <!-- <div class="feed-comments-right-wrapper flex-center">
               <i class="fa-regular fa-heart"></i>
-            </div>
+            </div> -->
           </div>
           <div class="feed-plus-wrapper flex-center">
             <input type="text" placeholder="댓글 달기..." class="input-comments" />
@@ -183,9 +196,9 @@
                 <span class="feed-favor-name" style="color: gray"><span class="feedTime"></span>분전</span>
               </div>
             </div>
-            <div class="feed-comments-right-wrapper flex-center">
+            <!-- <div class="feed-comments-right-wrapper flex-center">
               <i class="fa-regular fa-heart"></i>
-            </div>
+            </div> -->
           </div>
           <div class="feed-plus-wrapper flex-center">
             <input type="text" placeholder="댓글 달기..." class="input-comments" />

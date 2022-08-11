@@ -24,12 +24,14 @@ body {
 .search-wrapper {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .icon--wrapper {
   display: flex;
   align-items: center;
   margin-right: 40vh;
+  position: relative;
 }
 
 .icon {
@@ -145,7 +147,6 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 20px;
-  border: 1px solid gray;
 }
 
 .feed-favor-name {
@@ -170,6 +171,7 @@ body {
   flex-direction: column;
   padding-left: 10px;
   margin: 5px 0px 5px 0px;
+  width: 100%;
 }
 
 .feed-comments-right-wrapper {
@@ -197,4 +199,114 @@ body {
   font-size: 12px;
   color: rgb(187, 187, 216);
   margin-right: 10px;
+}
+
+.heart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cursor {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.search::after {
+  content: aaaa;
+  font-size: 20px;
+}
+
+.add {
+  position: absolute;
+  left: 40%; /*위치에 맞게 조정하시면 됩니다*/
+  bottom: -60%; /*위치에 맞게 조정하시면 됩니다*/
+  width: 0px;
+  height: 0px;
+  border-color: transparent transparent rgb(241, 236, 236) transparent; /*처음 위치조정할때는 색상변경해서 하시면 됩니다*/
+  border-width: 20px;
+  border-style: solid;
+  display: none;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+.user {
+  background-color: white;
+  border: 1px solid rgb(241, 236, 236);
+  padding: 10px;
+  z-index: 2;
+}
+
+.add-wrapper {
+  position: absolute;
+  left: 0%; /*위치에 맞게 조정하시면 됩니다*/
+  top: 164%; /*위치에 맞게 조정하시면 됩니다*/
+  border-color: white; /*처음 위치조정할때는 색상변경해서 하시면 됩니다*/
+  border-style: solid;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
+  display: none;
+  z-index: 2;
+  width: 100%;
+}
+
+.user-interface-wrapper {
+  position: absolute;
+  left: 70%; /*위치에 맞게 조정하시면 됩니다*/
+  bottom: -60%; /*위치에 맞게 조정하시면 됩니다*/
+  width: 0px;
+  height: 0px;
+  border-color: transparent transparent white transparent; /*처음 위치조정할때는 색상변경해서 하시면 됩니다*/
+  border-width: 20px;
+  border-style: solid;
+  z-index: 2;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
+  display: none;
+}
+
+.user-interface {
+  position: absolute;
+  left: -23%; /*위치에 맞게 조정하시면 됩니다*/
+  bottom: -627%; /*위치에 맞게 조정하시면 됩니다*/
+  width: 180px;
+  height: 170px;
+  background-color: white;
+  border: 1px solid rgb(241, 237, 237);
+  z-index: 2;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
+  display: none;
+}
+
+.interface {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.icon-down {
+  width: auto;
+  height: auto;
+  max-width: 20px;
+  max-height: 20px;
+  margin-right: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.icon-down2 {
+  width: auto;
+  height: auto;
+  max-width: 20px;
+  max-height: 20px;
+  margin-right: 10px;
+}
+
+.down {
+  border-top: 1px solid gray;
+  width: 100%;
+}
+
+.drop {
+  cursor: pointer;
+  z-index: 3;
 }
