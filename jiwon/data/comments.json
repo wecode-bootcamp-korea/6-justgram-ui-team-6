@@ -1,0 +1,22 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "userName": "zioni",
+      "content": "제주도 가고 시퓨ㅠㅠㅜ",
+      "images": "../image/zioni2.jpeg"
+    },
+    {
+      "id": 2,
+      "userName": "yooni",
+      "content": "나랑 놀아죠!",
+      "images": "../image/뭉치.jpeg"
+    },
+    {
+      "id": 3,
+      "userName": "gooood",
+      "content": "올만에 전시!!!!!",
+      "images": "../image/zioni.jpeg"
+    }
+  ]
+}
